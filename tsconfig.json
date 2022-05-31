@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "commonjs",
+    "lib": ["es2018", "es2015", "es5", "es6", "dom", "esnext.asynciterable"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "plugins": [{"name": "typescript-tslint-plugin"}],
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "jsx": "react",
+    "pretty": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "typeRoots": [
+      "node_modules/@types",
+    ],
+    "watch": true,
+    "strict": true,
+    "allowJs": true, 
+    "paths": {
+      "src/*": ["src/*"],
+      "__tests__/*": ["__tests__/*"]
+    }
+  },
+  "include": ["src/*","src/**/*", "__tests__"],
+  "exclude": ["./node_modules"]
+}
